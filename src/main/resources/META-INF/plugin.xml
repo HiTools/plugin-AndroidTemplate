@@ -3,7 +3,19 @@
     <name>HiTools Android Template</name>
     <vendor email="hitools@126.com" url="https://github.com/HiTools/plugin-AndroidTemplate">HiTools</vendor>
 
-    <description>A commonly used template plugin for Android</description>
+    <description><![CDATA[
+      <h1>HiTools Android Template</h1>
+      <p>A commonly used template plugin for Android<p>
+      <h2>Example</h2>
+      <h3>XML Template</h3>
+      <p>recycle: RecycleView Template</p>
+      <p>hcp: ConstraintLayout horizontal center in parent</p>
+      <p>vcp: ConstraintLayout vertical center in parent</p>
+      <p>cp: ConstraintLayout center in parent</p>
+      <p>...</p>
+      <h3>Java Template</h3>
+      <p>startModify: An comment  with date and time</p>
+    ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
     <version>1.0.0</version>

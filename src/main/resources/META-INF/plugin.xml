@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>dev.hitools.plugin.android.template</id>
+    <name>HiTools Android Template</name>
+    <vendor email="hitools@126.com" url="https://github.com/HiTools/plugin-AndroidTemplate">HiTools</vendor>
+
+    <description>A commonly used template plugin for Android</description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <version>1.0.0</version>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="AndroidTemplateProvider" />
+        <liveTemplateContext implementation="AndroidContext" />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

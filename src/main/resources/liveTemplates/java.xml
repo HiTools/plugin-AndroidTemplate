@@ -1,0 +1,11 @@
+<templateSet group="HiToolsJavaTemplate">
+    <template name="startModify"
+        description="Insert Date Time"
+        toReformat="false" toShortenFQNames="true" value="// modify by hitools@126.com $DATE$ $TIME$ (start) ">
+        <variable name="DATE" alwaysStopAt="true" defaultValue="" expression="date()" />
+        <variable name="TIME" alwaysStopAt="true" defaultValue="" expression="time()" />
+        <context>
+            <option name="Android" value="true" />
+        </context>
+    </template>
+</templateSet>

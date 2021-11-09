@@ -4,18 +4,31 @@
     <vendor email="hitools@126.com" url="https://github.com/HiTools/plugin-AndroidTemplate">HiTools</vendor>
 
     <description><![CDATA[
-      <h1>HiTools Android Template</h1>
+      <h3>HiTools Android Template</h3>
       <p>A commonly used template plugin for Android<p>
       <h2>Example</h2>
-      <h3>XML Template</h3>
+      <h1>XML Template</h1>
       <p>recycle: RecycleView Template</p>
       <p>hcp: ConstraintLayout horizontal center in parent</p>
       <p>vcp: ConstraintLayout vertical center in parent</p>
       <p>cp: ConstraintLayout center in parent</p>
+      <p>startChain: ConstraintLayout horizontal chain start</p>
+      <p>endChainP: ConstraintLayout horizontal chain end</p>
       <p>...</p>
-      <h3>Java Template</h3>
+      <h1>Java Template</h1>
       <p>startModify: An comment  with date and time</p>
+      <h2>Sources Code</h2>
+      <p>https://github.com/HiTools/plugin-AndroidTemplate</p>
+      <p>I hope i can help you</p>
     ]]></description>
+
+    <change-notes><![CDATA[
+       <h3>HiTools Android Template</h3>
+       <p>1. Fix template context error</p>
+       <p>2. add rxjava template</p>
+       <p>3. update java modify template</p>
+    ]]>
+    </change-notes>
 
     <depends>com.intellij.modules.platform</depends>
     <version>1.0.0</version>

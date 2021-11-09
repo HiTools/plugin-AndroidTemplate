@@ -1,11 +1,49 @@
 <templateSet group="HiToolsJavaTemplate">
-    <template name="startModify"
+    <template name="imods"
         description="Insert Date Time"
-        toReformat="false" toShortenFQNames="true" value="// modify by hitools@126.com $DATE$ $TIME$ (start) ">
+        toReformat="false" toShortenFQNames="true" value="//modified by hitools@126.com on $DATE$ (start) ">
         <variable name="DATE" alwaysStopAt="true" defaultValue="" expression="date()" />
-        <variable name="TIME" alwaysStopAt="true" defaultValue="" expression="time()" />
         <context>
-            <option name="Android" value="true" />
+            <option name="JAVA_COMMENT" value="true" />
+            <option name="JAVA_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="imode"
+              description="Insert Date Time"
+              toReformat="false" toShortenFQNames="true" value="//modified by hitools@126.com on $DATE$ (end) ">
+        <variable name="DATE" alwaysStopAt="true" defaultValue="" expression="date()" />
+        <context>
+            <option name="JAVA_COMMENT" value="true" />
+            <option name="JAVA_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="io2main" description="RxJava io2main" toReformat="false" toShortenFQNames="true" value=".observeOn(Schedulers.io())&#10;.subscribeOn(AndroidSchedulers.mainThread());">
+        <context>
+            <option name="JAVA_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="rxob" description="RxJava quick ob" toReformat="false" toShortenFQNames="true"
+              value="Observable.create((ObservableOnSubscribe&lt;$TYPE$&gt;) emitter -&gt; {&#10;
+&#10;
+        })&#10;
+                .subscribeOn(Schedulers.io())&#10;
+                .observeOn(AndroidSchedulers.mainThread())&#10;
+                .subscribe(new BlockingBaseObserver&lt;$TYPE$&gt;() {&#10;
+                    @Override&#10;
+                    public void onNext(@NonNull $TYPE$ s) {&#10;
+&#10;
+                    }&#10;
+&#10;
+                    @Override&#10;
+                    public void onError(@NonNull Throwable e) {&#10;
+&#10;
+                    }&#10;
+                });">
+        <variable name="TYPE" alwaysStopAt="true" defaultValue="TYPE" expression="" />
+        <context>
+            <option name="JAVA_STATEMENT" value="true" />
         </context>
     </template>
 </templateSet>

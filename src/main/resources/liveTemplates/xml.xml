@@ -126,4 +126,33 @@ app:layout_constraintBottom_toBottomOf=&quot;parent&quot;">
             <option name="XML_ATTRIBUTE" value="true" />
         </context>
     </template>
+
+    <template name="mgs" value="android:layout_marginStart=&quot;$size$&quot;" description="android:layout_marginStart=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+        <variable name="size" expression="" defaultValue="50px" alwaysStopAt="true" />
+        <context>
+            <option name="XML_ATTRIBUTE" value="true" />
+            <option name="XSL_TEXT" value="true" />
+        </context>
+    </template>
+    <template name="mge" value="android:layout_marginEnd=&quot;$size$&quot;" description="android:layout_marginEnd=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+        <variable name="size" expression="" defaultValue="50px" alwaysStopAt="true" />
+        <context>
+            <option name="XML_ATTRIBUTE" value="true" />
+            <option name="XSL_TEXT" value="true" />
+        </context>
+    </template>
+    <template name="mgt" value="android:layout_marginTop=&quot;$size$&quot;" description="android:layout_marginTop=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+        <variable name="size" expression="" defaultValue="50px" alwaysStopAt="true" />
+        <context>
+            <option name="XML_ATTRIBUTE" value="true" />
+            <option name="XSL_TEXT" value="true" />
+        </context>
+    </template>
+    <template name="mgb" value="android:layout_marginBottom=&quot;$size$&quot;" description="android:layout_marginBottom=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+        <variable name="size" expression="" defaultValue="50px" alwaysStopAt="true" />
+        <context>
+            <option name="XML_ATTRIBUTE" value="true" />
+            <option name="XSL_TEXT" value="true" />
+        </context>
+    </template>
 </templateSet>

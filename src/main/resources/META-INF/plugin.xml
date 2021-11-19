@@ -24,9 +24,7 @@
 
     <change-notes><![CDATA[
        <h3>HiTools Android Template</h3>
-       <p>1. Fix template context error</p>
-       <p>2. add rxjava template</p>
-       <p>3. update java modify template</p>
+       <p>1. Add margin templates</p>
     ]]>
     </change-notes>
 
